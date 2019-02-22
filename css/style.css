@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+      url(iconfont/MaterialIcons-Regular.woff) format('woff'),
+      url(iconfont/MaterialIcons-Regular.ttf) format('truetype');
+  }
+@font-face {
+    font-family: 'GoogleSans' ;
+    font-weight: 400;
+    font-size: 16px;
+    src: url('iconfont/Product Sans Regular.ttf') format('truetype');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+/*Estilos*/
+.sidenav > li > .user-view{
+    padding: 16px;
+}
+
+.user-view > a > span{
+    color: #202124;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.user-view > .side-nav-logo{
+    background: url("https://materializecss.com/res/materialize.svg") center no-repeat;
+    display: block;
+    background-size: contain;
+    height: 45px;
+    margin-right: 5px;
+    width: 64px;
+}
+
+.sidenav > li > .user-view{
+    display: flex;
+    justify-content: center;
+}
+
+#header .col{
+    padding: 0;
+}
+
+#header .card-panel{
+    margin: 0;
+    border-radius: 0;
+    min-height: 200px;
+    background: linear-gradient(45deg, #0288d1, #26c6da) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+}
+
+#header .card-panel > .title > p{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 34px;
+    margin: 5px;
+}
+
+#dataTable .card-panel{
+    position: relative;
+    margin-top: -105px;
+    min-height: 500px;
+    border-radius: 6px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
+}
