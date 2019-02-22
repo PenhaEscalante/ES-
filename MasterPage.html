@@ -12,22 +12,25 @@
     <link rel="stylesheet" href="css/MyDataTables.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.material.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Dashboard</title>
 </head>
 <body>
     <ul id="slide-out" class="sidenav sidenav-fixed">
         <li>
-            <div class="user-view" style="max-height: 72px; padding: 12px;">
-                <i class="side-nav-logo"></i>
-                <a href="#name"><span class="black-text">El Salvador ES +</span></a>
+            <div class="user-view z-depth-3" style="height: 200px; padding: 12px;">
+                <img src="/images/es.png" style="height:150px;">
             </div>
         </li>
-        <li><a href="#!" class="waves-effect">Empresas</a></li>
-        <li><a href="#!" class="waves-effect">Poscast</a></li>
-        <li><a href="#!" class="waves-effect">Productos</a></li>
+        <br>
+        <li><a href="#!" class="waves-effect blue-text"> <i class="smail material-icons blue-text">archive</i>Empresas</a></li>
+        <li><a href="#!" class="waves-effect blue-text"> <i class="smail material-icons blue-text">keyboard_voice</i>Poscast</a></li>
+        <li><a href="#!" class="waves-effect blue-text"> <i class="smail material-icons blue-text">collections</i>Productos</a></li>
     </ul>
     <main>
-        <div id="header" class="row">
+        <div id="header" class="row z-depth-3">
             <div class="col s12">
                 <div class="teal card-panel">
                     <div class="title">
@@ -36,6 +39,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+        </div>
+
         <div id="dataTable" class="container">
             <div class="row">
                 <div class="col s12">
