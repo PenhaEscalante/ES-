@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'esmas',
+	'hostname' => 'mysql7003.site4now.net',
+	'username' => 'a4286b_esmas',
+	'password' => '3lS@lv@d0r3Sm@s',
+	'database' => 'db_a4286b_esmas',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
