@@ -52,3 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//rutas para empresa
+$route['Empresas']['get'] = 'Empresas/index';
+$route['Empresas/(:num)']['get'] = 'Empresas/find/$l';
+$route['Empresas']['post'] = 'Empresas/index';
+$route['Empresas/(:num)']['put'] = 'Empresas/index/$l';
+$route['Empresas/(:num)']['delete'] = 'Empresas/index/$l';
