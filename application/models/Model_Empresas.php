@@ -15,21 +15,20 @@ class Model_Empresas extends CI_Model{
     }
 
     function insertEmpresa($data){
-        //$this->db->insert('empresa', $data);
-        $this->db->set($this->$_setEmpresa($data))->insert('empresa');
+        $this->db->insert('empresa', $data);
 
-        if($this->db->affected_rows() == 1){
+        if($this->db->affected_rows() > 0){
             return true;
         }
         return false;
     }
 
-    function updatePodcast($id_empresa, $data){
+    function updateEmpresa($id_empresa, $data){
         $this->db->where('id_empresa', $id_empresa);
         return $this->db->update('empresa', $data);
     }
 
-    function deletePodcast($id_empresa){
+    function deleteEmpresa($id_empresa){
         $this->db->where('id_empresa', $id_empresa);
         return $this->db->delete('empresa');
     }

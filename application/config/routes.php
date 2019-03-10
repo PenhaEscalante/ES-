@@ -59,3 +59,24 @@ $route['Empresas/(:num)']['get'] = 'Empresas/find/$l';
 $route['Empresas']['post'] = 'Empresas/index';
 $route['Empresas/(:num)']['put'] = 'Empresas/index/$l';
 $route['Empresas/(:num)']['delete'] = 'Empresas/index/$l';
+
+//rutas para podcast
+$route['Podcast']['get'] = 'Podcast/index';
+$route['Podcast/(:num)']['get'] = 'Podcast/find/$l';
+$route['Podcast']['post'] = 'Podcast/index';
+$route['Podcast/(:num)']['put'] = 'Podcast/index/$l';
+$route['Podcast/(:num)']['delete'] = 'Podcast/index/$l';
+
+//rutas para productos
+$route['Productos']['get'] = 'Productos/index';
+$route['Productos/(:num)']['get'] = 'Productos/find/$l';
+$route['Productos']['post'] = 'Productos/index';
+$route['Productos/(:num)']['put'] = 'Productos/index/$l';
+$route['Productos/(:num)']['delete'] = 'Productos/index/$l';
+
+//rutas para usuarios
+$route['Usuarios']['get'] = 'Usuarios/index';
+$route['Usuarios/(:num)']['get'] = 'Usuarios/find/$l';
+$route['Usuarios']['post'] = 'Usuarios/index';
+$route['Usuarios/(:num)']['put'] = 'Usuarios/index/$l';
+$route['Usuarios/(:num)']['delete'] = 'Usuarios/index/$l';

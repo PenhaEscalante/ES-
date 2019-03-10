@@ -9,9 +9,18 @@ class Model_Podcast extends CI_Model{
         return $query->result();
     }
 
+    function getPodcast($id_podcast){
+        $query = $this->db->query("SELECT * FROM podcasts Where id_podcasts = ".$id_podcast);
+        return $query->result();
+    }
+
     function insertPodcast($data){
         $this->db->insert('podcasts', $data);
-        return true;
+
+        if($this->db->affected_rows() > 0){
+            return true;
+        }
+        return false;
     }
 
     function updatePodcast($id_podcasts, $data){
