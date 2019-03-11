@@ -13,28 +13,41 @@ class Empresas extends REST_Controller {
     public function index_get(){
         $data = $this->Model_Empresas->getAll();
 
-        if(!empty($data)){
+        if(!empty($data))
+        {
             $this->response($data, 200);
-        }else{
+        }
+        else
+        {
             $this->response("No se encontraron registros", 404);
         }
     }
 
     //Obtiene un registro
     public function find_get(){
-        $id = $this->uri->segment(2);
 
-        if(!$id){
-            $this->response("Registro no encontrado", 400);
+        $id = $this->uri->segment(3);
+
+        if (ctype_digit($id))
+        {
+            $item = $this->Model_Empresas->getEmpresa($id);
+            if(!empty($item))
+            {
+                $this->response($item, 200);
+            }
+            else
+            {
+                $this->response(array("Registro no encontrado"), 404);
+            }
+        }
+        else
+        {
+            $this->response(array("Peticion no valida"), 400);
         }
 
-        $item = $this->Model_Empresas->getEmpresa($id);
+        
 
-        if(!empty($item)){
-            $this->response($item, 200);
-        }else{
-            $this->response(array("Registro no encontrado"), 404);
-        }
+        
     }
 
     //Inserta un nuevo registro

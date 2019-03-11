@@ -5,17 +5,17 @@ class Model_Productos extends CI_Model{
     }
 
     function getAll(){
-        $query = $this->db->query("SELECT * FROM productos");
+        $query = $this->db->query("SELECT * FROM producto");
         return $query->result();
     }
 
     function getProducto($id_podcast){
-        $query = $this->db->query("SELECT * FROM productos");
+        $query = $this->db->query("SELECT * FROM producto");
         return $query->result();
     }
 
     function insertProducto($data){
-        $this->db->insert('productos', $data);
+        $this->db->insert('producto', $data);
 
         if($this->db->affected_rows() > 0){
             return true;
@@ -24,12 +24,12 @@ class Model_Productos extends CI_Model{
     }
 
     function updateProducto($id_productos, $data){
-        $this->db->where('id_productos', $id_productos);
-        return $this->db->update('productos', $data);
+        $this->db->where('id_producto', $id_productos);
+        return $this->db->update('producto', $data);
     }
 
     function deleteProducto($id_productos){
-        $this->db->where('id_productos', $id_productos);
-        return $this->db->delete('productos');
+        $this->db->where('id_producto', $id_productos);
+        return $this->db->delete('producto');
     }
 }
