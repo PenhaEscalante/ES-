@@ -35,7 +35,7 @@ class Visitas extends REST_Controller {
         $item = $this->Model_Visitas->insertEmpresa($data);
 
         if($item){
-            $this->response("Empresa creada correctamente", 201);
+            $this->response("Visita realizada!", 201);
         }else{
             $this->$this->response("Error al ingresar el registro", 400);
         }
